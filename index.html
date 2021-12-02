@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harshita's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="pictures/favicon.png">
+
+     <!-- Service Worker Registration -->
+  <script type="text/javascript" src="portfolio.js">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+        // Registration was successful
+        console.log('Harshita-progressive-web-app: ServiceWorker registration successful');
+      }, function (err) {
+        // registration failed :(
+        console.log('Harshita-progressive-web-app: ServiceWorker registration failed: ', err);
+      });
+    }
+    </script>
+
+    <!-- Favicons -->
+  
+</head>
+
+<body>
+    <header>
+        <a href="#" class="welcome">Welcome</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#Myself">About</a></li>
+            <li><a href="#Talent">Skills</a></li>
+            <li><a href="#Myprojects">Projects</a></li>
+            <li><a href="#Art">Artwork</a></li>
+            <li><a href="#Reachme">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home">
+      <a href="#Myself" id="btn">Explore</a>
+        <img src="pictures/bg.jpg" id="bg">
+       <!-- <img src="pictures/moon.png" id="moon"> -->
+       <img src="pictures/searchpng.com-stars-bg-png-image-free-download.png" id="stars">
+        <h2  id="mainText" style="text-align: left;">Hi! I am <br>
+           Harshita Jain</h2>
+           
+        <img src="pictures/bg-forward.png" id="bg-forward">
+        <img src="pictures/bgbottom.png" id="bgbottom"> 
+        
+       
+    </section>
+
+    <!-- ======= About Section ======= -->
+    <a name="Myself">
+
+
+  <div class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h2>About Me</h2>
+        </div>
+        <div class="content">
+          <h3>Electronics and Communication Sophomore at National Institute of Technology, Hamirpur</h3>
+          <p class="font-italic">
+            <em>Hailing from the town known as Queen of Hills - Shimla, I believe in making my mark
+              with my sincerity, diligence and zest. I am an avid enthusiast of Augmented and Virtual Reality
+              and wish to do pragmatic projects based on the same. Apart from that, I am highly fond of painting,
+              reading, writing and everything else
+              that keeps the grey matter ticking.<br /><br /></em>
+          <div class="row">
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <ul>
+                <li> <strong>Degree:</strong> B.Tech, Electronics and Communication Engineering (2020-2024) </li>
+                <li> <strong>CGPA:</strong> 9.52/10 </li>
+                <li> <strong>Schooling:</strong> Loreto Convent Tara Hall Shimla| 96.6% (2018) || DAV Public School Lakkar
+                  Bazar Shimla| 97.6% (2020) - AISSCE (CBSE Class 12) State Topper in Non-Medical Stream</li>
+                <li> <strong>Achievements:</strong> National Semi Finalist at Pan-India Cryptic Crossword Contest |
+                  NTSE
+                  State Rank 7</li>
+                <li> <strong>Hackathons:</strong> Frosthack by IIT Mandi (Rank 7) </li>
+                <li> <strong>Currently exploring:</strong> Augmented Reality | Virtual Reality | Web Development</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="image-section">
+        <img src="pictures/image_Harshita.png">
+      </div>
+    </div>
+  </div>
+</a>
+
+<script>
+  
+  let mainText = document.getElementById('mainText');
+  let stars = document.getElementById('stars');
+  let btn = document.getElementById('btn');
+  let bgbottom = document.getElementById('bgbottom')
+  let header = document.querySelector('header');
+  
+  window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.50 + 'px';
+    
+    mainText.style.marginTop = value * 0.50 + 'px';
+    btn.style.marginTop = value * 1.5  + 'px';
+
+    header.style.top = value * 0.5 + 'px';
+  }
+  )
+</script>
+
+  
+           
+
+
+
+
+     <!-- ======= Skills Section ======= -->
+     <a name="Talent">
+     <section class="skillset"> 
+     
+     <div class="skill-bars">
+      <div class="bar">
+        <h2>Skills and Tools<br><br></h2>
+        <div class="info">
+          <span>Unity 3D</span>
+        </div>
+        <div class="progress-line Unity">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <span>Vuforia</span>
+        </div>
+        <div class="progress-line Vuforia">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <span>Spark AR</span>
+        </div>
+        <div class="progress-line Spark">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <span>Adobe Photoshop and Illustrator</span>
+        </div>
+        <div class="progress-line Adobe">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <span>Git and Github</span>
+        </div>
+        <div class="progress-line git">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <span>Front End Development</span>
+        </div>
+        <div class="progress-line web">
+          <span></span>
+        </div>
+      </div>
+
+    </section>
+  </a>
+
+      <!-- ======= Projects Section ======= -->
+      <a name="Myprojects">
+      <div class= "heading"><h1 > PROJECTS</h1></div>
+      <section id="portfolio" class="portfolio-section-bg">
+      
+        <div class="container" data-aos="fade-up">
+        <div class="image-grid">
+       <img class="image-grid-rows-2" src="pictures/Holocron.jpg" alt="Holocron">
+        <img class="image-grid-cols-3 image-grid-rows-2" src="pictures/barbarian.jpg" alt="barbarian">
+        <img class="image-grid-cols-3 image-grid-rows-2"  src="pictures/Bookabeam.jpeg" alt="Bookabeam">    
+        <img class="image-grid-rows-2" src="pictures/Hriday.jpeg" alt="Hriday"> 
+       </div>
+        </div>
+    </a>
+    
+
+
+<!--
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h1 style="text-align: center; color: azure;">PROJECTS</h1><br><br>
+        </div>
+
+        
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="pictures/Holocron.jpg" class="Holocron" alt="Holocron" width="540px" height="1170px">
+              <div class="portfolio-info">
+                <h4>  Holocron</h4>
+                <p>A riveting AR based game in which the user has to solve a set of riddles augmenting on image targets.</p>
+                <div class="portfolio-links">
+                  <a rel="noreferrer"
+                    href="https://github.com/harshitajain165/Holocron"
+                    target="_blank" rel="noreferrer"><img src="pictures/github.png" style="width: 30px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+  
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="pictures/Hriday.jpeg" class="Hriday" alt="Hriday">
+              <div class="portfolio-info">
+                <h4>Hriday</h4>
+                <p>An AR companion (a pet dog) that performs manoeuvres on being commanded</p>
+                <div class="portfolio-links">
+                  <a rel="noreferrer"
+                    href="https://github.com/harshitajain165/Frosthack"
+                    target="_blank" rel="noreferrer"><img src="pictures/github.png" style="width: 30px;"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+         
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="pictures/cubemania.png" class="cubemania" alt="cubemania">
+              <div class="portfolio-info">
+                <h4>Cubemania</h4>
+                <p>A game in which the player has to navigate a cube across a platform  by dodging the hurdles lying in the way.
+                </p>
+                <div class="portfolio-links">
+                  <a rel="noreferrer"
+                    href="https://github.com/harshitajain165/Cubemania"
+                    target="_blank" rel="noreferrer"><img src="pictures/github.png" style="width: 30px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="pictures/barbarian.jpg" class="barbarian" alt="barbarian" width="683" height="384">
+              <div class="portfolio-info">
+                <h4>Marker-based AR Spawning</h4>
+                <p>Spawning of a 3D model of a barbarian on an image target using Vuforia SDK</p>
+                <div class="portfolio-links"></div>
+                <a rel="noreferrer"
+                    href="https://github.com/harshitajain165/marker-based-reality"
+                    target="_blank" rel="noreferrer"><img src="pictures/github.png" style="width: 30px;"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="pictures/Bookabeam.jpeg" class="Bookabeam" alt="Bookabeam">
+              <div class="portfolio-info">
+                <h4>Book A Beam</h4>
+                <p>A website to facilitate hassle free donation and exchange of books among students.</p>
+                <div class="portfolio-links">
+                  <a rel="noreferrer"
+                    href="https://devfolio.co/submissions/book-a-beam-9019"
+                    target="_blank" rel="noreferrer"><img src="pictures/github.png" style="width: 30px;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div> -->
+    </section><!-- End Portfolio Section -->
+
+    <!--Artwork Section Begins-->
+    <a name="Art">
+    <div class= "heading"><h1 > ARTWORK</h1></div><br><br>
+    <div class="Artwork">
+   
+    
+      <div class="column">
+        <img class="artwork" src="pictures/3.png" alt="self" style="width: 400px; height: 400px;">
+      <div class="info">
+        <h1>Enigma</h1>
+        <p>When fear breathes its last, art is born.
+          </p>
+      </div>  
+      </div>
+        
+      
+
+     
+      <div class="column">
+        <img class="artwork" src="pictures/4.png" alt="umang" style="width: 400px; height: 400px;">
+        
+        <div class="info">
+          <h1>Illusion</h1>
+          <p>The chief enemy of creativity is 'good' sense.
+            </p>
+        </div>  
+      </div>  
+     
+        
+        <div class="column">
+        <img class="artwork" src="pictures/1_CAGE THE ELEPHANT.png" alt="elephant" style="width: 400px; height: 400px;">
+        <div class="info"><h1>Cage the Elephant</h1>
+          <p>A replica of the album cover of Melophobia by Cage the Elephant, the illustration
+            captures the essence of all that is abstract and beyond our minds.
+          </p>
+
+        </div> 
+      </div>
+    </div>
+  </a>
+
+    <!-- ======= Contact Section ======= -->
+    <a name="Reachme">
+    
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          
+          <h2 style="color: azure; ">Contact</h2><br>
+        
+        </div>
+
+        
+            <div class="info">
+              
+
+              <div class="email">
+                <img class="email" src="pictures/icons/email.png" ALIGN="left" width="40px">
+                <h4 style="padding-left: 30px;">  Email:</h4>
+                <p style="padding-left: 30px;">jainharshita561@gmail.com</p><br>
+              </div>
+
+              <div class="phone">
+                <img class="phone" src="pictures/icons/call.png" ALIGN="left" width="40px">
+                <h4 style="padding-left: 30px;">Phone Number:</h4>
+                <p style="padding-left: 30px;">(+91)7018689041</p><br>
+              </div>
+
+              <div class="address">
+                <img class="address" src="pictures/icons/pin.png" ALIGN="left" width="40px">
+                <h4 style="padding-left: 30px;">Location:</h4>
+                <p style="padding-left: 30px;">Shimla, Himachal Pradesh, India</p><br>
+              </div>
+
+            </div>
+
+          
+      </div>
+    </section>
+  </a>
+  
+  <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+    
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Harshita Jain</h3>
+      <p>Contact for suggestions and collaboration.<br> Actively looking for internship.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/harshitajain16"><img class="linkedin" src="pictures/linkedin.png" width="30px"> </a>
+        <a href="https://github.com/harshitajain165"><img class="github" src="pictures/github.png" width="29px"> </a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Harshita's Portfolio</span></strong>.
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+</body>
+</html>
