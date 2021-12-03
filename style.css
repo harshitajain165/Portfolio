@@ -11,8 +11,11 @@
 body {
   min-height: 100vh;
   /* overflow: hidden; */
-  background: linear-gradient(to bottom, #182280, #34cec2);
+  background: linear-gradient(to bottom, #182280, #65e9e9); 
+ 
 }
+
+
 
 header {
   position: absolute;
