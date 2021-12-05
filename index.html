@@ -25,11 +25,12 @@
 
 <body>
     <header>
-        <a href="#" class="welcome">Welcome</a>
+        <a href="#" class="welcome"></a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#Myself">About</a></li>
             <li><a href="#MySkills">Skills</a></li>
+            <li> <a href="#MyAchievements">Achievements</a></li>
             <li><a href="#MyProjects">Projects</a></li>
             <li><a href="#MyArtwork">Artwork</a></li>
             <li><a href="#Reachme">Contact</a></li>
@@ -37,15 +38,18 @@
     </header>
 
     <section class="home">
-      <a href="#Myself" id="btn">Explore</a>
+      <!-- <a href="#Myself" id="btn">Explore</a> -->
+      <img src="assets/moon.png" id="moon" style="width: 250px; height: 250px; position: absolute; ">
         <img src="assets/bg.jpg" id="bg">
-       <!-- <img src="assets/moon.png" id="moon"> -->
+      
        <img src="assets/searchpng.com-stars-bg-png-image-free-download.png" id="stars">
-        <h2  id="mainText" style="text-align: left; ">Hi! I am <br>
+        <h2  id="mainText" style="text-align: left;  ">Hi! I am <br>
            Harshita Jain</h2>
            
         <img src="assets/bg-forward.png" id="bg-forward">
-        <img src="assets/bgbottom.png" id="bgbottom"> 
+        <img src="assets/bg-left-down.png" id= "bg-left-down"> 
+         <img src="assets/bgbottom.png" id="bgbottom"> 
+         
         
        
     </section>
@@ -74,13 +78,12 @@
               <ul>
                 <li> <strong>Degree:</strong> B.Tech, Electronics and Communication Engineering (2020-2024) </li>
                 <li> <strong>CGPA:</strong> 9.52/10 </li>
-                <li> <strong>Schooling:</strong> Loreto Convent Tara Hall Shimla| 96.6% (2018) || DAV Public School Lakkar
+                <li> <strong>Schooling:</strong> Loreto Convent Tara Hall Shimla| 96.6% (2018) - NTSE State Rank 7 || DAV Public School Lakkar
                   Bazar Shimla| 97.6% (2020) - AISSCE (CBSE Class 12) State Topper in Non-Medical Stream</li>
-                <li> <strong>Achievements:</strong> GitHub Campus Expert | National Semi Finalist at Pan-India Cryptic Crossword Contest |
-                  NTSE
-                  State Rank 7</li>
-                <li> <strong>Hackathons:</strong> Frosthack by IIT Mandi (Rank 7) </li>
-                <li> <strong>Currently exploring:</strong> Augmented Reality | Virtual Reality | Web Development | UI/UX</li>
+                <li> <strong>Hackathons:</strong> Participated in XR Hackathon by Meta | Frosthack by IIT Mandi | She Hacks by DTU |  Electrothon 3.0 by NIT Hamirpur</li>
+                <li> <strong>Currently exploring:</strong> Extended Reality | Game Development | UI/UX</li>
+                <li> <strong>Community Involvement:</strong> Executive Member at Society for Promotion of Electronics Culture | 
+                Co-coordinator at Web Portal Team of Student Alumni Relations Cell NITH | Volunteer at Team Piublic Relations NITH</li>
               </ul>
             </div>
           </div>
@@ -100,6 +103,7 @@
   
   let mainText = document.getElementById('mainText');
   let stars = document.getElementById('stars');
+  let moon = document.getElementById('moon');
   let btn = document.getElementById('btn');
   let bgbottom = document.getElementById('bgbottom')
   let header = document.querySelector('header');
@@ -107,9 +111,21 @@
   window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.left = value * 0.50 + 'px';
+
     
-    mainText.style.marginTop = value * 0.50 + 'px';
-    btn.style.marginTop = value * 1.5  + 'px';
+    mainText.style.marginTop = value * 0.40 + 'px';
+    moon.style.marginTop = value * 1.0  + 'px';
+
+    header.style.top = value * 0.5 + 'px';
+  }
+  )
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrollX;
+    moon.style.left = value * 0.50 + 'px';
+    // stars.style.left = value * 0.50 + 'px';
+    
+ 
 
     header.style.top = value * 0.5 + 'px';
   }
@@ -123,7 +139,7 @@
 
   <div class = "inner">
     <div class = "header-skill">
-      <h1 style="font-size: 30px; margin-top: 5rem; margin-bottom: 3rem;">SKILLS</h1>
+      <h1 style="font-size: 30px; margin-top: 0rem; margin-bottom: 3rem;">SKILLS</h1>
     </div>
     <div class="skill-container">
       <div class="skill-box">
@@ -241,7 +257,46 @@
 </section>
 </a>
   
-           
+     <!--Achievements Section Begins-->
+    <a name="MyAchievements">
+      <div class= "heading" style="margin-top: 0rem;"><h1 > ACHIEVEMENTS</h1></div><br><br>
+      <div class="Achievements">
+     
+      
+        <div class="column">
+         
+          <img class="artwork" src="assets/GCE.png" alt="GCE" style="width: 400px; height: 400px;">
+        </a>
+        <div class="info">
+          <h1>GitHub Campus Expert</h1>
+          <p>One of the 82 students selected globally to promote inclusivity and diversity in communities.
+            <br>  <a href="https://githubcampus.expert/harshitajain165/" target="_blank">Find more</a>
+            </p>
+        </div>  
+        </div>
+          
+      
+          <div class="column">
+          <img class="artwork" src="assets/frosthack.jpg" alt="frosthack" style="width: 400px; height: 400px;">
+          <div class="info"><h1>7th at Frosthack</h1>
+            <p>Project Hriday bagged 7th position at Frosthack by IIT Mandi
+            </p>
+  
+          </div> 
+        </div>
+
+        <div class="column">
+          <img class="artwork" src="assets/CCCC.jpg" alt="CCCC" style="width:400px; height: 400px;">
+          
+          <div class="info">
+            <h1>Finalist, Cryptic Crossword</h1>
+            <p>Two times national semi finalist and state winner at Cryptic Crossword Contest
+              <br><a href = "https://www.youtube.com/watch?v=lkiGpvFujOk&t=275s" target="_blank">Find more</a>
+              </p>
+          </div>  
+        </div>  
+      </div>
+    </a>      
 
 
 
@@ -400,6 +455,7 @@
                 </div>
               </div>
 
+        
               <div class="item">
                 <div class="left">
                   <div class="img">
@@ -421,6 +477,7 @@
                   </div>
                 </div>
               </div>
+              
 
 
               <!-- <div class="item" >
@@ -450,6 +507,7 @@
         </div>
       </section>
     </a> 
+  
 
     <!--Artwork Section Begins-->
     <a name="MyArtwork">
@@ -470,7 +528,7 @@
 
      
       <div class="column">
-        <img class="artwork" src="assets/4.png" alt="umang" style="width: 400px; height: 400px;">
+        <img class="artwork" src="assets/4.png" alt="umang" style="width:400px; height: 400px;">
         
         <div class="info">
           <h1>Illusion</h1>
