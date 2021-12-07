@@ -25,6 +25,36 @@
   src: url(Fonts/Starjedi.ttf);
 }
 
+@font-face {
+  font-family: Azonix;
+  src: url(Fonts/Azonix-1VB0.otf);
+}
+
+@font-face {
+  font-family: Stargaze;
+  src: url(Fonts/Stargaze\ Stencil.otf);
+}
+
+@font-face {
+  font-family: Zeniq;
+  src: url(Fonts/Zeniq.ttf);
+}
+
+@font-face {
+  font-family: Equinox;
+  src: url(Fonts/FontsFree-Net-EquinoxRegular.ttf);
+}
+
+@font-face {
+  font-family: Gathell;
+  src: url(Fonts/FontsFree-Net-GathellThin-jEvwy.ttf);
+}
+
+@font-face {
+  font-family: Quantify;
+  src: url(Fonts/Quantify\ Bold\ v2.6.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +119,7 @@ header .welcome {
 
 header ul {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -161,14 +191,14 @@ header ul li a.active {
 .home #moon{
   
   margin-top: 0px;
-  margin-left: 500px;
+  margin-left: 430px;
   opacity: 2.0;
 }
 
 #mainText {
-  font-weight: lighter;
+  
   font-weight: 400;
-  font-family: Viper;
+  font-family: Quantify;
   /* font-style: bold; */
   position: absolute;
   top: 180px;
@@ -219,6 +249,7 @@ header ul li a.active {
 
 #btn {
   text-decoration: none;
+  align-items: center;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 40px;
