@@ -242,7 +242,7 @@ header ul li a.active {
 }
 
 .home h2{
-  animation: ani2 6s ease 3s forwards;
+  animation: ani2 6s ease 1.5s forwards;
 }
 
 @keyframes ani2{
