@@ -12,15 +12,6 @@
 }
 
 @font-face {
-  font-family: Apex;
-  src: url(Fonts/ApexMk2-Regular.otf);
-}
-@font-face {
-  font-family: Anita;
-  src: url(Fonts/Anita\ semi\ square.ttf);
-}
-
-@font-face {
   font-family: Starjedi;
   src: url(Fonts/Starjedi.ttf);
 }
@@ -28,16 +19,6 @@
 @font-face {
   font-family: Azonix;
   src: url(Fonts/Azonix-1VB0.otf);
-}
-
-@font-face {
-  font-family: Stargaze;
-  src: url(Fonts/Stargaze\ Stencil.otf);
-}
-
-@font-face {
-  font-family: Zeniq;
-  src: url(Fonts/Zeniq.ttf);
 }
 
 @font-face {
@@ -74,6 +55,10 @@ body {
   /* animation: reveal 10s ease-in-out infinite; */
  
 }
+
+/*--------------------------------------------------------------
+  Loader
+  --------------------------------------------------------------*/
 
 .loader_bg{
   position: fixed;
@@ -265,7 +250,9 @@ header ul li a.active {
   overflow: hidden;
 }
 
-/* About Section */
+/*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
 
 .section {
   color: #fff;
@@ -337,9 +324,10 @@ header ul li a.active {
     font-size: 19px;
   }
 }
-/*End of about section */
 
-/*Skills*/
+/*--------------------------------------------------------------
+  # Skills
+  --------------------------------------------------------------*/
 .skillset{
   padding: 0;
   margin: 0;
@@ -424,14 +412,17 @@ header ul li a.active {
 
 }
 
-/*Achievements begins*/
+/*--------------------------------------------------------------
+  # Achievements
+  --------------------------------------------------------------*/
+
 .Achievements {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  
   justify-content: space-around;
-  padding: 0px 4px;
+  padding: 0 4px;
+  
   margin: auto;
   align-items: center;
   text-align: center;
@@ -440,12 +431,9 @@ header ul li a.active {
 .column {
   width: 350px;
   height: 400px;
-  
   border-radius: 20px;
-  padding: 1 rem 1 rem;
-  background: #18c259;
-  
- 
+  padding: 1 rem 2 rem;
+  background: #96c3ee;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -504,7 +492,6 @@ header ul li a.active {
 .column:hover .info {
   opacity: 1;
   transform: translateY(0px);
-  
 }
 
 .column .info h1 {
@@ -555,11 +542,8 @@ header ul li a.active {
   }
 }
 
-/*Artwork ends*/
-
-
 /*--------------------------------------------------------------
- Projects Section 
+ # Projects Section 
   --------------------------------------------------------------*/
 
 #projects {
@@ -701,8 +685,6 @@ header ul li a.active {
 		text-align: center;
 	}
 }
-----------------------------------------
-----------------------------------------
 
 @media screen and (max-width: 1024px) {
   .image-grid {
@@ -711,8 +693,9 @@ header ul li a.active {
   }
 } 
 
-
-/*Extracurricular begins*/
+/*--------------------------------------------------------------
+  # Extracurricular (Minor Projects)
+  --------------------------------------------------------------*/
 .Extracurricular {
   display: flex;
   flex-wrap: wrap;
@@ -838,12 +821,10 @@ header ul li a.active {
   }
 }
 
-/*Extracurricular ends*/
+/*--------------------------------------------------------------
+  # Artwork
+  --------------------------------------------------------------*/
 
-
-
-
-/*Artwork begins*/
 .Artwork {
   display: flex;
   flex-wrap: wrap;
@@ -970,9 +951,9 @@ header ul li a.active {
   }
 }
 
-/*Artwork ends*/
-
-/*contact*/
+/*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
 
 #contact {
   color: aliceblue;
