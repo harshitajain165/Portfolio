@@ -2,4 +2,6 @@
 <h2 > Portfolio Website<h2>
 
   <a href="https://harshitajain165.github.io">
-<img src="https://user-images.githubusercontent.com/77115160/144892038-e3e4200e-ecd8-4457-9d7c-3ca202e2c2d3.png" alt="Portfolio Cover" width="480px"></a>
+<img src="https://user-images.githubusercontent.com/77115160/144996432-d3e8a7ee-43ca-4552-94c1-a21e8c1edb0d.png" alt="Portfolio Cover" width="540px" ></a>
+  
+
