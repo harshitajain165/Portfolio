@@ -68,32 +68,58 @@ body {
   /* overflow: hidden; */
   background: linear-gradient(180deg, #242524, #171941, #324d3a, #8cecf0 );
   
-  /* background: linear-gradient(180deg, #000000, #515ada , #efd5ff ); */
-  /* background: linear-gradient(180deg,#3A1C71 100%, #FDBB2D ); */
-  /* background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b); */
-  /* background: #96c3ee; */
-  /* background: linear-gradient(180deg, #172889, #17413f, #1c1e45 , #17413f );  */
-  /* background: linear-gradient(180deg,#182a91, #5e807b 10%, #154b3f 90%); */
-  /* background: #171941 */
+ 
   /* background-size: 400% 400%;  */
   /* position: relative; */
   /* animation: reveal 10s ease-in-out infinite; */
  
 }
 
-/* @keyframes change {
-0%{
-  background-position: 0 50%;
-}  
-
-50%{
-  background-position: 100% 50%;
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #191a2c;
+  width: 100%;
+  height: 100%;
+}
+.loader{
+  border: 0 soild transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+  content: '';
+  border: 1em solid #a7d3e7 ;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+}
+@keyframes loader{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 0;
+  }
 }
 
-100%{
-  background-position: 0 50%;
-}
-} */
 
 
 
@@ -195,6 +221,7 @@ header ul li a.active {
   opacity: 2.0;
 }
 
+
 #mainText {
   
   font-weight: 400;
@@ -207,45 +234,22 @@ header ul li a.active {
   
   font-size: 6.5vw;
   font-size: 4.5em;
-   /* z-index: 9;
-  transform: translateY(100px);
-  animation: reveal 1s ease-in-out forwards;
-  animation-name: reveal;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 4;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running; */
 
+} 
+
+.home h2{
+  opacity: 0;
 }
 
-/* #mainText::before{
-  top: 0;
-  left: 0;
-  width: 0;
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  -webkit-text-stroke: 0vw #fff;
-  border-right: 2px solid #fff;
-  overflow: hidden;
-  animation: animate 6s linear infinite;
+.home h2{
+  animation: ani2 6s ease 3s forwards;
 }
 
-@keyframes animate{
-0%,10%,100%{
-   width: 0;
+@keyframes ani2{
+  100%{
+    opacity: 1;
+  }
 }
-70%,90%{
-  width: 100%;
-}
-} */
 
 #btn {
   text-decoration: none;

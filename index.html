@@ -7,26 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-
-     <!-- Service Worker Registration -->
-  <script type="text/javascript" src="portfolio.js">
-    // Initialize the service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
-        // Registration was successful
-        console.log('Harshita-progressive-web-app: ServiceWorker registration successful');
-      }, function (err) {
-        // registration failed :(
-        console.log('Harshita-progressive-web-app: ServiceWorker registration failed: ', err);
-      });
-    }
-    </script>
-
     <!-- Favicons -->
   
 </head>
 
 <body>
+
+  <div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
     <header>
         <a href="#" class="welcome"></a>
         <ul>
@@ -43,7 +33,7 @@
 
     <section class="home">
       <!-- <a href="#Myself" id="btn">Explore</a> -->
-      <h2  id="mainText" style="text-align: left;  ">HI! I AM <br>
+      <h2  id="mainText" style="text-align: left;">HI! I AM <br>
         HARSHITA JAIN</h2>
       <img src="assets/moon.png" id="moon" style="width: 250px; height: 250px; position: absolute; ">
         <img src="assets/bg.png" id="bg">
@@ -555,7 +545,7 @@
 
     <!--Artwork Section Begins-->
     <a name="MyArtwork">
-    <div class= "heading" style="margin-top: 6rem;"><h1 > ARTWORK</h1></div><br><br>
+    <div class= "heading" style="margin-top: 6rem;"><h1 >DIGITAL ART</h1></div><br><br>
     <div class="Artwork">
    
     
@@ -659,6 +649,13 @@
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
   <div id="preloader"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
 </body>
 </html>
