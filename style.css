@@ -240,11 +240,25 @@ header ul li a.active {
   text-decoration: none;
   align-items: center;
   display: inline-block;
-  padding: 8px 30px;
+  padding: 6px 24px;
   border-radius: 40px;
   background: #fff;
   color: #2b1055;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  z-index: 9;
+  transform: translateY(100px);
+  overflow: hidden;
+}
+
+#button{
+  text-decoration: none;
+  /* align-items: center; */
+  display: inline-block;
+  padding: 6px 24px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.2em;
   z-index: 9;
   transform: translateY(100px);
   overflow: hidden;
@@ -416,7 +430,156 @@ header ul li a.active {
   # Achievements
   --------------------------------------------------------------*/
 
-.Achievements {
+
+
+  #Achievements {
+    padding: 10rem 0;
+  }
+  #Achievements .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  
+    /* gap: 2rem; */
+  }
+  
+  #project-title{
+    color: #ddd;
+  }
+  
+  #Achievements .item:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  #Achievements .item .left {
+    flex: 1;
+  }
+  #Achievements .item .right {
+    margin-left: -150px;
+    flex: 1;
+    background-color: var(--body-bg);
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #00000068;
+    z-index: 2;
+  }
+  
+  .right{
+    color: #96c3ee;
+  }
+  #Achievements .item:nth-of-type(even) .right {
+    margin-left: 0;
+  }
+  #Achievements .item:nth-of-type(even) .left {
+    margin-left: -150px;
+  }
+  #Achievements .item .left .img {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #8c77c733;
+    position: relative;
+  }
+  #Achievements .item .left .img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #5a24ed38; */
+  }
+  #Achievements .item .left .img img {
+    object-fit: cover;
+    transition: 0.3s ease transform;
+  }
+  #Achievements .item:hover .left .img img {
+    transform: scale(1.3);
+    z-index: 1;
+  }
+  #Achievements .item .right .project-title {
+    font-size: 2.0rem;
+    font-family: 'Montserrat';
+    margin-bottom: 1rem;
+  }
+  #Achievements .item .right .project-sub-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  #Achievements .item .right .project-desc {
+    color: var(--secondary-gray);
+    margin-bottom: 3rem;
+    margin-left: 5.5rem;
+    margin-right: 0rem;
+  }
+  /* #projects .item .left .project-desc {
+    color: var(--secondary-gray);
+    margin-bottom: 3rem;
+    margin-left: -3rem;
+    margin-right: 5.5rem;
+  } */
+  #Achievements .item .right .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+    #Achievements .item .left .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    /* padding: calc(0.6em - 4px) calc(1.6em - 4px); */
+  }
+  #Achievements .item .right .external-link svg {
+    width: 25px;
+  }
+  
+  #Achievements .item .left .github{
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #Achievements .item {
+      flex-direction: column;
+    }
+    #Achievements .item .left {
+      width: 100%;
+    }
+    #Achievements .item .right {
+      margin-left: 0;
+      width: 90%;
+      margin-top: -150px;
+    }
+    #Achievements .item:nth-of-type(even) {
+      flex-direction: column;
+    }
+    #Achievements .item:nth-of-type(even) .left {
+      margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    #Achievements .item .right .buttons {
+      flex-direction: column;
+    }
+    #Achievements .item .right .buttons a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-heigh: 200px;
+    }
+  } 
+
+/* .Achievements {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -540,7 +703,7 @@ header ul li a.active {
     flex: 100%;
     max-width: 100%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
  # Projects Section 
@@ -555,7 +718,7 @@ header ul li a.active {
 	justify-content: center;
 	max-width: 800px;
 	margin: 0 auto;
-	margin-bottom: 8rem;
+	margin-bottom: 6rem;
 
 	/* gap: 2rem; */
 }
