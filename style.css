@@ -47,9 +47,8 @@
 body {
   min-height: 100vh;
   /* overflow: hidden; */
-  background: linear-gradient(180deg, #242524, #171941, #324d3a, #8cecf0 );
-  
- 
+  background: linear-gradient(180deg, #242524, #1d1f42, #A1A7C8);
+
   /* background-size: 400% 400%;  */
   /* position: relative; */
   /* animation: reveal 10s ease-in-out infinite; */
@@ -89,7 +88,7 @@ body {
   opacity: 0;
 }
 .loader:before{
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 @keyframes loader{
   0%{
