@@ -1207,6 +1207,10 @@ p {
   transition: transform 0.7s ease-in-out;
 }
 
+#footer .social-links .wordpress:hover {
+  transition: transform 0.7s ease-in-out;
+}
+
 #footer .copyright {
   margin: 0 0 5px 0;
 }
